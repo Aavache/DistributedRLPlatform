@@ -1,4 +1,4 @@
-'''This script serves as opengym environment wrapper for our purposes'''
+'''This script serves as opengym environment wrapper for our client'''
 import gym
 import numpy
 import torch

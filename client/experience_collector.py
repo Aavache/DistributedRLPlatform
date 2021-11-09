@@ -1,5 +1,5 @@
 '''This script emulates a game client that uses the trained models to collect new experience. The client sends data to the cluster;
-to this the client frequently downloads the new versions of the model to keep generating more substantial game records'''
+to this end, the client frequently downloads newer versions of the model to keep generating more substantial game records'''
 
 # External dependencies
 import os
