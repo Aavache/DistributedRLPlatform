@@ -1,0 +1,31 @@
+{
+    "experiment_name": "test1",
+    "weight_dir": "weights",
+    "output_dir": "outputs",
+    "device": -1,
+    "total_episodes": 10000,
+    "window_size": 20,
+    "upload_freq": 1,
+    "download_freq": 3,
+    "plot_freq": 5,
+    "verbose": true,
+    "kinesis":{
+        "partition_key": "game_records",
+        "stream_arn": "arn:aws:kinesis:ap-northeast-2:858185519102:stream/distributed_game_rl_stream",
+        "stream_name": "distributed_game_rl_stream"
+    },
+    "s3":{
+        "bucket_name": "weightstorage",
+        "weight_name": "weights_def.pt"
+    },
+    "env":{
+        "env_name": "CartPole-v0",
+        "skip_frames": 0,
+        "state_size": 4,
+        "action_size": 2,
+        "render":false
+    },
+    "agent":{
+        "deterministic": false
+    }
+}

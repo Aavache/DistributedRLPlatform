@@ -1,0 +1,1 @@
+CREATE TABLE cartpole_sac (pk uuid, episode int, step int, state list<float>, action int, reward float, next_state list<float>, done boolean, game_id text, PRIMARY KEY((game_id), episode, step, pk)) WITH CLUSTERING ORDER BY (episode desc, step desc, pk desc);
